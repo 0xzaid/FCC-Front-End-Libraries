@@ -3,6 +3,7 @@ $(document).ready(function () {
     var quoteText = $("#text");
     var quoteAuthor = $("#author");
     var quote = $("#quote");
+    var quote2 = $("#quote2");
 
     // Select the tweet and tumblr buttons
     var tweetButton = $("#tweet-quote");
@@ -62,6 +63,9 @@ $(document).ready(function () {
 
                 // Change the color of the quote
                 quote.animate({
+                    color: colors[randomColorIndex]
+                }, 1500);
+                quote2.animate({
                     color: colors[randomColorIndex]
                 }, 1500);
 
